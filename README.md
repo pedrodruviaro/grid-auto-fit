@@ -6,9 +6,9 @@
 
 ### <code>**grid-template-columns: repeat(auto-fit, minmax(min, max))**</code>
 
--   _repeat_: enquanto houver a possibilidade de criar colunas, faça.
--   _auto-fit_: encaixe os elementos na coluna, com tamanho variável. Mas qual tamanho?
--   _minmax()_: função que define o tamanho das colunas. O primeiro argumento da função é o tamanho MÍNIMO da coluna, e o segundo, o tamanho MÁXIMO. Exemplo: <code>minmax(200px, 500px)</code>. A coluna terá um tamanho mínimo de 200 pixels e um máximo de 500 píxels. Enquanto houver a possibilidade de enxaicar as colunas tomando como base 200 píxels, o grid irá fazer.
+-   _repeat()_: enquanto houver a possibilidade de criar colunas, faça.
+-   _auto-fit_: encaixe as colunas no layout, com tamanho variável. Mas qual tamanho?
+-   _minmax()_: função que define o tamanho das colunas. O primeiro argumento da função é o tamanho MÍNIMO da coluna, e o segundo, o tamanho MÁXIMO. Exemplo: <code>minmax(200px, 500px)</code>. A coluna terá um tamanho mínimo de 200 píxels e um máximo de 500 píxels. Enquanto houver a possibilidade de enxaicar as colunas tomando como base 200 píxels, o grid irá fazer.
 
 -   No exemplo do código: <code>**grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));**</code>
     -   utilizando <code>**1fr**</code> como tamanho máximo: auxilia na responsividade. Se definirmos um tamanho mínimo coerente, 1fr definirá apenas <code>**uma**</code> coluna em dispositivos mobile.
