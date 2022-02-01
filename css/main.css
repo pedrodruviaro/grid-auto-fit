@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@400;700&display=swap");
+:root {
+  --ff-heading: "Bebas Neue", cursive;
+  --ff-text: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+@media (min-width: 45em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  font-family: var(--ff-text);
+  line-height: 1.4;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+  color: #212121;
+}
+
+h1 {
+  font-family: var(--ff-heading);
+  font-weight: 600;
+}
+
+.container {
+  width: 90%;
+  max-width: 75em;
+  margin-inline: auto;
+}
+
+.title-container {
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  min-height: 20vh;
+  display: grid;
+  place-items: center;
+  background-color: #ee5522;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.21'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.21'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+}
+.title-container h1 {
+  color: #fff;
+  font-size: clamp(2.5rem, 1rem + 4vw, 4rem);
+  letter-spacing: 2px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+  padding: 1em;
+}
+
+.grid-container {
+  margin-block: 3rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 4.5rem 1fr;
+}
+.card header {
+  background-color: #00a17b;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.55'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.card main {
+  padding: 1.5rem;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  padding: 1em;
+  background-color: #fff;
+  border-top: 1px solid rgba(128, 128, 128, 0.192);
+  font-size: 0.6rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+/*# sourceMappingURL=main.css.map */
